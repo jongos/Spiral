@@ -8,4 +8,6 @@ Example invocation: `$spiral-workflow-rehearsal Rehearse this approval workflow 
 
 Spiral tracks what each actor can see, knows, must do and is waiting for. It complements Longshot's rendered interface testing and Dazzler's creation work; neither is required. It does not simulate human behavior, predict adoption or perform live multi-user testing.
 
+Bounded uses include revision-sensitive approvals, collaborative publication, service handoffs, support shifts and marketplace acceptance/expiry coordination. [Research foundations and limits](skills/spiral-workflow-rehearsal/references/research.md) connect the review to distributed cognition, common ground, asynchronous awareness, coordination dependencies and workflow exceptions. [Conditional cases](skills/spiral-workflow-rehearsal/references/conditional-cases.md) extend the fictional example and outline proposed synthetic validation. Research informs the method; it does not prove correctness or human efficacy.
+
 The [fictional worked example](skills/spiral-workflow-rehearsal/references/fictional-approval.md) illustrates the output. This package has received structural validation and draft read-through only, not real application testing or human efficacy validation. Findings are logical deductions or hypotheses bounded by the supplied sources. No market-first or trademark-clearance claim is made.
