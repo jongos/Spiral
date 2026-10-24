@@ -4,7 +4,7 @@
 
 **Before the Build. Between the People.**
 
-Spiral is a research-informed draft skill for rehearsing multi-person workflows before implementation. It helps product managers, designers and engineers find missing handoffs, notifications, ownership and recovery paths while changes are still on paper.
+Spiral is an agent skill for rehearsing multi-person workflows before implementation. It helps product managers, designers and engineers find missing handoffs, notifications, ownership and recovery paths while changes are still on paper.
 
 ## Put It to Work
 
@@ -25,9 +25,7 @@ Track what requester, approver and admin can see, do and wait for.
 Include a late approval and a failed notification.
 ```
 
-[Follow the fictional approval example](skills/spiral-workflow-rehearsal/references/fictional-approval.md) · [Research and limits](skills/spiral-workflow-rehearsal/references/research.md)
-
-This is logical workflow rehearsal, not human behavior simulation or live multi-user testing. The draft has not been validated for human efficacy; findings depend on the supplied sources.
+[Follow the fictional approval example](skills/spiral-workflow-rehearsal/references/fictional-approval.md) · [Research foundations](skills/spiral-workflow-rehearsal/references/research.md)
 
 ## In the Hex Men Family
 
@@ -38,8 +36,8 @@ This is logical workflow rehearsal, not human behavior simulation or live multi-
 | [Style Science](https://github.com/jongos/style-science) | Make design requirements, constraints and evidence inspectable. |
 | [Shatterstar](https://github.com/jongos/Shatterstar) | Evaluate what to remove, combine, hide or defer while preserving important tasks. |
 
-[Hex Men](https://github.com/jongos/Hex-Men) brings the collection together. Choose the project your question needs; there is no required sequence. Spiral and Shatterstar are research-informed drafts and their repositories require access.
+[Hex Men](https://github.com/jongos/Hex-Men) brings the collection together. Choose the project your question needs; there is no required sequence.
 
 ## Further Reading
 
-[Detailed project reference](REFERENCE.md) · [Landing page](docs/index.html) · [Preview and validation notes](REFERENCE.md#landing-page-source)
+[Detailed project reference](REFERENCE.md) · [Landing page](docs/index.html) · [Page preview notes](REFERENCE.md#landing-page-source)
