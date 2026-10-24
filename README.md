@@ -1,23 +1,45 @@
-![Spiral — Follow the Work. Find the Gaps.](docs/readme-banner.svg)
+![Spiral](docs/readme-banner.svg)
 
 # Spiral
 
-Draft agent skill for pre-build rehearsal of multi-person, asynchronous workflows. For product managers, designers and engineers who need to specify handoffs before implementation.
+**Before the Build. Between the People.**
 
-Use [spiral-workflow-rehearsal](skills/spiral-workflow-rehearsal/SKILL.md) with role permissions, workflow specs, mockups, notification templates and timing rules. Supply whichever artifacts exist; missing evidence becomes an explicit uncertainty.
+Spiral is a research-informed draft skill for rehearsing multi-person workflows before implementation. It helps product managers, designers and engineers find missing handoffs, notifications, ownership and recovery paths while changes are still on paper.
 
-Example invocation: `$spiral-workflow-rehearsal Rehearse this approval workflow from each actor's visible information. Trace missed notifications, reassignment and late approvals; return source-linked handoff requirements and acceptance scenarios.`
+## Put It to Work
 
-Spiral tracks what each actor can see, knows, must do and is waiting for. It complements Longshot's rendered interface testing and Dazzler's creation work; neither is required. It does not simulate human behavior, predict adoption or perform live multi-user testing.
+- **Approvals:** who knows a decision is complete, and which version was approved?
+- **Support handoffs:** who owns the request while a specialist or next shift takes over?
+- **Collaborative work:** what changed while someone was away, and what needs their attention?
+- **Delayed or out-of-order events:** which state is current, who can resolve a conflict, and how does work resume?
 
-Bounded uses include revision-sensitive approvals, collaborative publication, service handoffs, support shifts and marketplace acceptance/expiry coordination. [Research foundations and limits](skills/spiral-workflow-rehearsal/references/research.md) connect the review to distributed cognition, common ground, asynchronous awareness, coordination dependencies and workflow exceptions. [Conditional cases](skills/spiral-workflow-rehearsal/references/conditional-cases.md) extend the fictional example and outline proposed synthetic validation. Research informs the method; it does not prove correctness or human efficacy.
+Spiral follows each actor’s visible information separately. The result is a source-linked event ledger, specific handoff requirements and candidate acceptance scenarios, with facts separated from assumptions.
 
-The [fictional worked example](skills/spiral-workflow-rehearsal/references/fictional-approval.md) illustrates the output. This package has received structural validation and draft read-through only, not real application testing or human efficacy validation. Findings are logical deductions or hypotheses bounded by the supplied sources. No market-first or trademark-clearance claim is made.
+## Rehearse a Workflow
 
-## Landing Page Source
+Make [spiral-workflow-rehearsal](skills/spiral-workflow-rehearsal/SKILL.md) available to a compatible skill-capable agent. Bring roles, permissions, workflow rules, mockups or notification templates—whichever exist.
 
-[Preview source](docs/index.html) · [Design notes](docs/DESIGN.md). The responsive static page is checked in but not publicly deployed. To preview a local checkout with Python available, run `python -m http.server 8000 --bind 127.0.0.1 --directory docs` and open `http://127.0.0.1:8000`. No installation is needed for the site itself.
+```text
+Use $spiral-workflow-rehearsal to rehearse this approval workflow.
+Track what requester, approver and admin can see, do and wait for.
+Include a late approval and a failed notification.
+```
 
-The page uses original vector illustrations and locally bundled Inter and League Gothic fonts, with their notices in `docs/fonts/`. Public hosting or Pages configuration requires a separate publication decision; repository visibility remains unchanged.
+[Follow the fictional approval example](skills/spiral-workflow-rehearsal/references/fictional-approval.md) · [Research and limits](skills/spiral-workflow-rehearsal/references/research.md)
 
-[Desktop preview](docs/previews/desktop.jpg) · [Mobile preview](docs/previews/mobile.jpg) · [Validation scope](docs/VALIDATION.md)
+This is logical workflow rehearsal, not human behavior simulation or live multi-user testing. The draft has not been validated for human efficacy; findings depend on the supplied sources.
+
+## In the Hex Men Family
+
+| Project | How It Complements This Work |
+|---|---|
+| [Dazzler](https://github.com/jongos/Dazzler) | Create and refine expressive interfaces, documents and visual stories. |
+| [Longshot](https://github.com/jongos/Longshot) | Independently attempt rendered interface tasks and return reproducible evidence. |
+| [Style Science](https://github.com/jongos/style-science) | Make design requirements, constraints and evidence inspectable. |
+| [Shatterstar](https://github.com/jongos/Shatterstar) | Evaluate what to remove, combine, hide or defer while preserving important tasks. |
+
+[Hex Men](https://github.com/jongos/Hex-Men) brings the collection together. Choose the project your question needs; there is no required sequence. Spiral and Shatterstar are research-informed drafts and their repositories require access.
+
+## Further Reading
+
+[Detailed project reference](REFERENCE.md) · [Landing page](docs/index.html) · [Preview and validation notes](REFERENCE.md#landing-page-source)
