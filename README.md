@@ -6,6 +6,20 @@
 
 Spiral helps product managers, designers and engineers find gaps in multi-person workflows before building. Rehearse handoffs, notifications, ownership and recovery one role at a time.
 
+## The Problem
+
+Some work passes between people: a request, an approval, a support case. Each person sees only part of the picture.
+
+A plan can have a gap that nobody notices until the product is built. For example, a manager approves a request, but nothing tells the person who asked.
+
+## What This Does About It
+
+Spiral is a skill: a folder of instructions you add to an AI agent. Before you build, it walks through the process one person at a time. For each person it tracks what they can see, what they can do and what they are waiting for.
+
+You get a timeline linked back to your documents, a list of what each handoff needs (a handoff is when work passes to the next person), and test scenarios. Spiral keeps what your documents say apart from what it had to assume.
+
+**Example.** In the project’s made-up example, the plan never says the person who asked gets told after approval. Spiral flags that gap. It calls it a gap in the documents, not a bug in a real app.
+
 ## Put It to Work
 
 - **Approvals:** who knows a decision is complete, and which version was approved?
@@ -29,18 +43,25 @@ Include a late approval and a failed notification.
 
 [Follow the fictional approval example](skills/spiral-workflow-rehearsal/references/fictional-approval.md) · [Research foundations](skills/spiral-workflow-rehearsal/references/research.md)
 
-## In the Hex Men Family
+## Part of the Hex Men Collection
 
-| Project | How It Complements This Work |
+[Hex Men](https://github.com/jongos/Hex-Men) is a directory of independent projects by Jon Gosier. Each project stands on its own; these are its members.
+
+| Project | What It Does |
 |---|---|
-| [Dazzler](https://github.com/jongos/Dazzler) | Create and refine interfaces, documents and slides. |
-| [Longshot](https://github.com/jongos/Longshot) | Test interface tasks and report reproducible findings. |
-| [Style Science](https://github.com/jongos/style-science) | Connect design requirements to measurable checks and evidence. |
-| [Shatterstar](https://github.com/jongos/Shatterstar) | Simplify products while preserving important tasks. |
-| [Mojo](https://github.com/jongos/Mojo) | Make AI outputs clear and direct. |
-
-[Explore Hex Men](https://github.com/jongos/Hex-Men) for tools that complement your task.
+| [Hex Men](https://github.com/jongos/Hex-Men) | Directory of independent projects |
+| [Dazzler](https://github.com/jongos/Dazzler) | Create and refine expressive visual interfaces |
+| [Longshot](https://github.com/jongos/Longshot) | Independently test rendered UI tasks and provide replayable evidence |
+| [Style Science](https://github.com/jongos/style-science) | Provide inspectable design reasoning, constraints and evidence |
+| **Spiral** (this repository) | Rehearse role-limited asynchronous workflows before building |
+| [Shatterstar](https://github.com/jongos/Shatterstar) | Propose reversible evidence-backed simplification while preserving important tasks |
+| [Mojo](https://github.com/jongos/Mojo) | Remove repetition, needless nuance and overly cautious language from AI outputs |
+| [Colossus](https://github.com/jongos/Colossus) | Inventory selected developer workspaces read-only and surface evidence-backed questions |
 
 ## Further Reading
 
 [Detailed project reference](REFERENCE.md) · [Landing page](docs/index.html) · [Page preview notes](REFERENCE.md#landing-page-source)
+
+## License
+
+Created by Jon Gosier. Original work is Apache-2.0; bundled Inter and League Gothic font files retain their own licenses and notices (see `docs/fonts/`). See [LICENSE](LICENSE).
