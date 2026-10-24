@@ -1,3 +1,5 @@
+![Spiral — Follow the Work. Find the Gaps.](docs/readme-banner.svg)
+
 # Spiral
 
 Draft agent skill for pre-build rehearsal of multi-person, asynchronous workflows. For product managers, designers and engineers who need to specify handoffs before implementation.
@@ -11,3 +13,11 @@ Spiral tracks what each actor can see, knows, must do and is waiting for. It com
 Bounded uses include revision-sensitive approvals, collaborative publication, service handoffs, support shifts and marketplace acceptance/expiry coordination. [Research foundations and limits](skills/spiral-workflow-rehearsal/references/research.md) connect the review to distributed cognition, common ground, asynchronous awareness, coordination dependencies and workflow exceptions. [Conditional cases](skills/spiral-workflow-rehearsal/references/conditional-cases.md) extend the fictional example and outline proposed synthetic validation. Research informs the method; it does not prove correctness or human efficacy.
 
 The [fictional worked example](skills/spiral-workflow-rehearsal/references/fictional-approval.md) illustrates the output. This package has received structural validation and draft read-through only, not real application testing or human efficacy validation. Findings are logical deductions or hypotheses bounded by the supplied sources. No market-first or trademark-clearance claim is made.
+
+## Landing Page Source
+
+[Preview source](docs/index.html) · [Design notes](docs/DESIGN.md). The responsive static page is checked in but not publicly deployed. To preview a local checkout with Python available, run `python -m http.server 8000 --bind 127.0.0.1 --directory docs` and open `http://127.0.0.1:8000`. No installation is needed for the site itself.
+
+The page uses original vector illustrations and locally bundled Inter and League Gothic fonts, with their notices in `docs/fonts/`. Public hosting or Pages configuration requires a separate publication decision; repository visibility remains unchanged.
+
+[Desktop preview](docs/previews/desktop.jpg) · [Mobile preview](docs/previews/mobile.jpg) · [Validation scope](docs/VALIDATION.md)
