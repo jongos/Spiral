@@ -1,5 +1,30 @@
 # Changelog
 
+## 2026-10-24 - Separate-Agent Blinded Evaluation
+
+**Added:** Anonymized shuffled inputs, unchanged skill snapshot, protocol hashes,
+raw reviewer response and case-by-case grading. A fresh-context separate agent
+received no rubric or earlier findings.
+
+**Results:** Five seeded gaps identified; six controls received no supported-gap
+finding. The ownership case matched substantively but differed in classification.
+This was one batch with instruction-enforced blinding, not per-case isolation or
+an efficacy certification. Core skill unchanged; no push or deployment.
+
+## 2026-10-24 - Validation Fixtures and Installation Guidance
+
+**Added:** Five flawed/control fixture pairs, one coherent negative control,
+separate grading expectations, an unblinded manual walkthrough and four standard-library
+repository checks. Installation guidance covers whole-folder copying, discovery
+verification, scoped locations and preserving customizations during updates.
+
+**Validation:** All four automated checks passed on Python 3.12 after rerunning
+outside a Windows sandbox temporary-directory restriction. These check fixture
+integrity, local links and portable copying, not language-model efficacy. Manual
+review found four missing specifications and one contradiction; corrected controls
+resolved their paired gaps. Independent blinded evaluation remains outstanding.
+Core skill and reference files are unchanged. No installation, push or deployment.
+
 ## 2026-10-24 - Focused Marketing Copy
 
 **Changed:** Removed repeated maturity labels and research disclaimers from the README and landing page. Kept purpose, uses, companion roles and operational instructions. Existing follow-up-review explanations remain intact.

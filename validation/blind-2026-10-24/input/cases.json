@@ -1,0 +1,186 @@
+[
+  {
+    "id": "case-01",
+    "scope": "Publish only the version that was approved.",
+    "sources": {
+      "A": "Author edits; approver approves a specific version; publisher can release only approved versions.",
+      "B": "Approver approves v1. Author makes a substantive v2 edit. Publisher opens v2.",
+      "C": "The release view shows v1 approval separately and marks v2 unapproved; publishing v2 is blocked until its approval."
+    },
+    "events": [
+      "Approver approves v1.",
+      "Author saves v2.",
+      "Publisher attempts to release v2."
+    ],
+    "exclusions": [
+      "Real delivery reliability and human behavior are outside this bounded model."
+    ]
+  },
+  {
+    "id": "case-02",
+    "scope": "A transfers a support case to B.",
+    "sources": {
+      "A": "A can assign a case to the B queue. B can accept queued cases; the dispatcher can recover stalled transfers.",
+      "B": "The fixture establishes that B has not accepted at the end of this trace. A queue notice is delivered.",
+      "C": "Assignment clears A as owner immediately; no owner is defined until B accepts."
+    },
+    "events": [
+      "A assigns the case.",
+      "The queue notice arrives.",
+      "B has not accepted."
+    ],
+    "exclusions": [
+      "Real delivery reliability and human behavior are outside this bounded model."
+    ]
+  },
+  {
+    "id": "case-03",
+    "scope": "B completes a decision using a private rationale.",
+    "sources": {
+      "A": "A may read a private rationale. B may decide using only a disclosed summary; B cannot read the private rationale.",
+      "B": "The decision requires the summary. A remains the owner until B can act.",
+      "C": "No summary disclosure surface or event is specified."
+    },
+    "events": [
+      "A reads the private rationale.",
+      "B opens the decision screen."
+    ],
+    "exclusions": [
+      "Real delivery reliability and human behavior are outside this bounded model."
+    ]
+  },
+  {
+    "id": "case-04",
+    "scope": "Resolve an assigned request despite an absent approver.",
+    "sources": {
+      "A": "Approver may decide assigned requests. Dispatcher may reassign to an authorized alternate.",
+      "B": "The approver is absent for this entire trace; requester waits on a pending request.",
+      "C": "No observer, timeout, escalation or return event is specified for the pending wait."
+    },
+    "events": [
+      "Request becomes pending.",
+      "Approver remains absent.",
+      "60 elapsed minutes pass."
+    ],
+    "exclusions": [
+      "Real delivery reliability and human behavior are outside this bounded model."
+    ]
+  },
+  {
+    "id": "case-05",
+    "scope": "A transfers a support case to B.",
+    "sources": {
+      "A": "A can assign a case to the B queue. B can accept queued cases; the dispatcher can recover stalled transfers.",
+      "B": "The fixture establishes that B has not accepted at the end of this trace. A queue notice is delivered.",
+      "C": "A remains accountable until B accepts; after 30 elapsed minutes the dispatcher sees and owns an unaccepted transfer."
+    },
+    "events": [
+      "A assigns the case.",
+      "The queue notice arrives.",
+      "B has not accepted."
+    ],
+    "exclusions": [
+      "Real delivery reliability and human behavior are outside this bounded model."
+    ]
+  },
+  {
+    "id": "case-06",
+    "scope": "Recover a failed workflow after a physical dispatch.",
+    "sources": {
+      "A": "Dispatch is irreversible in this fixture. A service may flag cancellation; an operator can arrange return or record unrecoverable dispatch.",
+      "B": "Dispatch completes, then receipt recording fails.",
+      "C": "Receipt failure creates a recovery task owned by the operator; dispatch remains recorded as occurred. Operator arranges return or records unrecoverable dispatch, and communicates the outcome to the authorized requester."
+    },
+    "events": [
+      "Physical dispatch completes.",
+      "Receipt recording fails.",
+      "Cancellation is requested."
+    ],
+    "exclusions": [
+      "Real delivery reliability and human behavior are outside this bounded model."
+    ]
+  },
+  {
+    "id": "case-07",
+    "scope": "Recover a failed workflow after a physical dispatch.",
+    "sources": {
+      "A": "Dispatch is irreversible in this fixture. A service may flag cancellation; an operator can arrange return or record unrecoverable dispatch.",
+      "B": "Dispatch completes, then receipt recording fails.",
+      "C": "The cancellation flag is the only specified recovery; no effect-specific recovery owner or state is defined."
+    },
+    "events": [
+      "Physical dispatch completes.",
+      "Receipt recording fails.",
+      "Cancellation is requested."
+    ],
+    "exclusions": [
+      "Real delivery reliability and human behavior are outside this bounded model."
+    ]
+  },
+  {
+    "id": "case-08",
+    "scope": "Requester reads a committed decision in a single authenticated session.",
+    "sources": {
+      "A": "Requester can view their request; assigned approver can decide. All actions in this fixture pass authorization.",
+      "B": "Approver commits v1 approval; requester then explicitly reads the current v1 decision page. The page shows Approved and no further required action.",
+      "C": "Approval is terminal. No edits, departure, notification, external effect or subsequent action is in scope."
+    },
+    "events": [
+      "Approver commits approval.",
+      "Requester reads current approved state."
+    ],
+    "exclusions": [
+      "Notification transport, later revisions and user behavior outside the trace."
+    ]
+  },
+  {
+    "id": "case-09",
+    "scope": "Resolve an assigned request despite an absent approver.",
+    "sources": {
+      "A": "Approver may decide assigned requests. Dispatcher may reassign to an authorized alternate.",
+      "B": "The approver is absent for this entire trace; requester waits on a pending request.",
+      "C": "After 60 elapsed minutes a service timer exposes the pending wait to dispatcher, who owns recovery and reassigns to an authorized alternate; the request stays pending until a decision."
+    },
+    "events": [
+      "Request becomes pending.",
+      "Approver remains absent.",
+      "60 elapsed minutes pass."
+    ],
+    "exclusions": [
+      "Real delivery reliability and human behavior are outside this bounded model."
+    ]
+  },
+  {
+    "id": "case-10",
+    "scope": "Publish only the version that was approved.",
+    "sources": {
+      "A": "Author edits; approver approves a specific version; publisher can release only approved versions.",
+      "B": "Approver approves v1. Author makes a substantive v2 edit. Publisher opens v2.",
+      "C": "The release view shows an unversioned Approved badge and allows v2 to be published using the v1 approval."
+    },
+    "events": [
+      "Approver approves v1.",
+      "Author saves v2.",
+      "Publisher attempts to release v2."
+    ],
+    "exclusions": [
+      "Real delivery reliability and human behavior are outside this bounded model."
+    ]
+  },
+  {
+    "id": "case-11",
+    "scope": "B completes a decision using a private rationale.",
+    "sources": {
+      "A": "A may read a private rationale. B may decide using only a disclosed summary; B cannot read the private rationale.",
+      "B": "The decision requires the summary. A remains the owner until B can act.",
+      "C": "A publishes an authorized summary to B; the fixture establishes that B reads it before deciding."
+    },
+    "events": [
+      "A reads the private rationale.",
+      "B opens the decision screen."
+    ],
+    "exclusions": [
+      "Real delivery reliability and human behavior are outside this bounded model."
+    ]
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "case-01": "version-b",
+  "case-02": "ownership-a",
+  "case-03": "knowledge-a",
+  "case-04": "waiting-a",
+  "case-05": "ownership-b",
+  "case-06": "recovery-b",
+  "case-07": "recovery-a",
+  "case-08": "complete-a",
+  "case-09": "waiting-b",
+  "case-10": "version-a",
+  "case-11": "knowledge-b"
+}

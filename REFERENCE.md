@@ -2,6 +2,11 @@
 
 [Return to the project overview](README.md). Setup, research and supporting detail are retained below.
 
+[Installation and updates](INSTALL.md) · [Synthetic validation](validation/README.md).
+The initial fixture walkthrough is an unblinded consistency review. A subsequent
+[separate-agent blinded evaluation](validation/blind-2026-10-24/RESULTS.md) covers
+the synthetic fixtures; repeated isolated trials and real application testing remain outstanding.
+
 ![Spiral — Follow the Work. Find the Gaps.](docs/readme-banner.svg)
 
 # Spiral
@@ -16,7 +21,7 @@ Spiral tracks what each actor can see, knows, must do and is waiting for. It com
 
 Bounded uses include revision-sensitive approvals, collaborative publication, service handoffs, support shifts and marketplace acceptance/expiry coordination. [Research foundations and limits](skills/spiral-workflow-rehearsal/references/research.md) connect the review to distributed cognition, common ground, asynchronous awareness, coordination dependencies and workflow exceptions. [Conditional cases](skills/spiral-workflow-rehearsal/references/conditional-cases.md) extend the fictional example and outline proposed synthetic validation. Research informs the method; it does not prove correctness or human efficacy.
 
-The [fictional worked example](skills/spiral-workflow-rehearsal/references/fictional-approval.md) illustrates the output. This package has received structural validation and draft read-through only, not real application testing or human efficacy validation. Findings are logical deductions or hypotheses bounded by the supplied sources. No market-first or trademark-clearance claim is made.
+The [fictional worked example](skills/spiral-workflow-rehearsal/references/fictional-approval.md) illustrates the output. This package has received structural checks, an [unblinded synthetic walkthrough](validation/REVIEW-2026-10-24.md) and one [separate-agent blinded evaluation](validation/blind-2026-10-24/RESULTS.md). Real application testing and human efficacy validation remain outstanding. Findings are logical deductions or hypotheses bounded by the supplied sources. No market-first or trademark-clearance claim is made.
 
 ## Landing Page Source
 

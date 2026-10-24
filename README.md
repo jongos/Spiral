@@ -19,6 +19,8 @@ Spiral tracks what each role can see and do. You receive a source-linked event t
 
 Install [spiral-workflow-rehearsal](skills/spiral-workflow-rehearsal/SKILL.md) in an agent that supports skills. Bring roles, permissions, workflow rules, mockups or notification templates—whichever exist.
 
+[Installation and updates](INSTALL.md) · [Validation fixtures and results](validation/README.md)
+
 ```text
 Use $spiral-workflow-rehearsal to rehearse this approval workflow.
 Track what requester, approver and admin can see, do and wait for.

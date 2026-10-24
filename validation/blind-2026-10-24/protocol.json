@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-24",
+  "baseline_commit": "891f945",
+  "reviewer": "blind_evaluator",
+  "history": "fork_turns=none",
+  "model": "inherited parent model; no override",
+  "allowed_inputs": [
+    "input/SKILL.md",
+    "input/cases.json"
+  ],
+  "withheld": [
+    "mapping.json",
+    "../expectations.json",
+    "../REVIEW-2026-10-24.md",
+    "skill reference supplements"
+  ],
+  "blinding": "Fresh agent context; instructions restrict reads, not filesystem-enforced isolation. Cases anonymized and shuffled together; similar cases may reveal pairing.",
+  "grading": "Parent compares saved raw response to existing rubric after response completion.",
+  "sha256": {
+    "input/SKILL.md": "e53bcfdd0ca7e1251afbddf5c0615d10f114df24b516a649ecd38356b3b20802",
+    "input/cases.json": "7433defb9a874a7e6cf5905d4915eb19109a3e872ad65ba1142d5c7e987d7604",
+    "mapping.json": "0c6be2812ccbc5f23778661bd2d21b832b2f3c21b62830ee658221e5be787aa1",
+    "../expectations.json": "0c2cbdc37167711b5578ba106b3e16e66cbca42bdd39747b660116d469a35067"
+  },
+  "archival_note": "After evaluator completed, input/SKILL.md renamed to input/SKILL.txt without changing bytes; this preserves the exact input without treating its intentionally unbundled relative links as installed documentation.",
+  "response_sha256": "9a4cd6473369fcf7385ad2f6add001da9ca2b063e49e4dd20a236bb50678eb2b",
+  "archived_skill_sha256": "e53bcfdd0ca7e1251afbddf5c0615d10f114df24b516a649ecd38356b3b20802"
+}

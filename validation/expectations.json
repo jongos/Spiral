@@ -1,0 +1,178 @@
+{
+  "knowledge-a": {
+    "pair": "knowledge",
+    "variant": "flawed",
+    "classification": "missing specification",
+    "required": "No authorized path supplies the required summary to B.",
+    "evidence": [
+      "A",
+      "B",
+      "C"
+    ],
+    "forbidden": [
+      "B knows the private rationale",
+      "The implementation definitely lacks notifications"
+    ],
+    "disconfirming_evidence": "An authorized summary reaches B before the decision."
+  },
+  "knowledge-b": {
+    "pair": "knowledge",
+    "variant": "control",
+    "classification": "no seeded gap",
+    "required": "Do not report the paired gap; explain how source C resolves it.",
+    "evidence": [
+      "A",
+      "B",
+      "C"
+    ],
+    "forbidden": [
+      "B knows the private rationale",
+      "The implementation definitely lacks notifications"
+    ],
+    "disconfirming_evidence": "An authorized summary reaches B before the decision."
+  },
+  "ownership-a": {
+    "pair": "ownership",
+    "variant": "flawed",
+    "classification": "missing specification",
+    "required": "Responsibility is unassigned between queue assignment and acceptance.",
+    "evidence": [
+      "A",
+      "B",
+      "C"
+    ],
+    "forbidden": [
+      "Delivery proves B accepted",
+      "The customer saw internal notes"
+    ],
+    "disconfirming_evidence": "An explicit accountable owner persists until acceptance."
+  },
+  "ownership-b": {
+    "pair": "ownership",
+    "variant": "control",
+    "classification": "no seeded gap",
+    "required": "Do not report the paired gap; explain how source C resolves it.",
+    "evidence": [
+      "A",
+      "B",
+      "C"
+    ],
+    "forbidden": [
+      "Delivery proves B accepted",
+      "The customer saw internal notes"
+    ],
+    "disconfirming_evidence": "An explicit accountable owner persists until acceptance."
+  },
+  "version-a": {
+    "pair": "version",
+    "variant": "flawed",
+    "classification": "contradiction",
+    "required": "The release rule permits an unapproved version despite the approved-version-only policy.",
+    "evidence": [
+      "A",
+      "B",
+      "C"
+    ],
+    "forbidden": [
+      "All edits always require approval in every product",
+      "Publisher knows unseen approver intentions"
+    ],
+    "disconfirming_evidence": "A current-version gate blocks v2 until approval."
+  },
+  "version-b": {
+    "pair": "version",
+    "variant": "control",
+    "classification": "no seeded gap",
+    "required": "Do not report the paired gap; explain how source C resolves it.",
+    "evidence": [
+      "A",
+      "B",
+      "C"
+    ],
+    "forbidden": [
+      "All edits always require approval in every product",
+      "Publisher knows unseen approver intentions"
+    ],
+    "disconfirming_evidence": "A current-version gate blocks v2 until approval."
+  },
+  "waiting-a": {
+    "pair": "waiting",
+    "variant": "flawed",
+    "classification": "missing specification",
+    "required": "The wait has no specified detection and recovery path.",
+    "evidence": [
+      "A",
+      "B",
+      "C"
+    ],
+    "forbidden": [
+      "Admin silently fixes it",
+      "A proposed timeout is an existing policy"
+    ],
+    "disconfirming_evidence": "A named observer, timer, authorized handler and usable next state are specified."
+  },
+  "waiting-b": {
+    "pair": "waiting",
+    "variant": "control",
+    "classification": "no seeded gap",
+    "required": "Do not report the paired gap; explain how source C resolves it.",
+    "evidence": [
+      "A",
+      "B",
+      "C"
+    ],
+    "forbidden": [
+      "Admin silently fixes it",
+      "A proposed timeout is an existing policy"
+    ],
+    "disconfirming_evidence": "A named observer, timer, authorized handler and usable next state are specified."
+  },
+  "recovery-a": {
+    "pair": "recovery",
+    "variant": "flawed",
+    "classification": "missing specification",
+    "required": "A cancellation flag does not define recovery for the completed dispatch.",
+    "evidence": [
+      "A",
+      "B",
+      "C"
+    ],
+    "forbidden": [
+      "Cancel reverses dispatch",
+      "A return is guaranteed"
+    ],
+    "disconfirming_evidence": "An authorized owner handles the completed effect with explicit recoverable and unrecoverable outcomes."
+  },
+  "recovery-b": {
+    "pair": "recovery",
+    "variant": "control",
+    "classification": "no seeded gap",
+    "required": "Do not report the paired gap; explain how source C resolves it.",
+    "evidence": [
+      "A",
+      "B",
+      "C"
+    ],
+    "forbidden": [
+      "Cancel reverses dispatch",
+      "A return is guaranteed"
+    ],
+    "disconfirming_evidence": "An authorized owner handles the completed effect with explicit recoverable and unrecoverable outcomes."
+  },
+  "complete-a": {
+    "pair": null,
+    "variant": "negative",
+    "classification": "no seeded gap",
+    "required": "No supported defect within this bounded trace; do not require a notification when the requester already reads the current state.",
+    "evidence": [
+      "A",
+      "B",
+      "C"
+    ],
+    "forbidden": [
+      "Notification is always mandatory",
+      "Reading guarantees human understanding"
+    ],
+    "disconfirming_evidence": "A contradictory permission, stale display or required next action would change the assessment."
+  }
+}
