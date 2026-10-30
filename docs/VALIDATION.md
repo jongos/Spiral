@@ -10,3 +10,7 @@ Checked on 2026-10-24 against the saved static source using local Chrome preview
 - No application behavior, skill efficacy or human usability study was tested. No public deployment, Pages setting or repository visibility was changed.
 
 Canonical skill files were excluded from the site/README commit. Font copyright and license notices remain in fonts/. Original illustrations contain only fictional or conceptual material.
+
+## October 30, 2026 Update
+
+Editorial landing page reviewed against the live Dazzler and Longshot references. Desktop rendered review and installation-anchor navigation passed. A 390px emulation reported 390px document width (no horizontal overflow). Local anchors resolve and no broken images were detected. This is targeted coverage, not a complete accessibility or usability audit. Core skill unchanged.

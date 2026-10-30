@@ -25,8 +25,8 @@ The [fictional worked example](skills/spiral-workflow-rehearsal/references/ficti
 
 ## Landing Page Source
 
-[Preview source](docs/index.html) · [Design notes](docs/DESIGN.md). The responsive static page is checked in but not publicly deployed. To preview a local checkout with Python available, run `python -m http.server 8000 --bind 127.0.0.1 --directory docs` and open `http://127.0.0.1:8000`. No installation is needed for the site itself.
+[Preview source](docs/index.html) · [Design notes](docs/DESIGN.md). The responsive static page is published through GitHub Pages at https://jongos.github.io/Spiral/. To preview a local checkout with Python available, run `python -m http.server 8000 --bind 127.0.0.1 --directory docs` and open `http://127.0.0.1:8000`. No installation is needed for the site itself.
 
-The page uses original vector illustrations and locally bundled Inter and League Gothic fonts, with their notices in `docs/fonts/`. Public hosting or Pages configuration requires a separate publication decision; repository visibility remains unchanged.
+The page uses original vector illustrations and locally bundled Inter and League Gothic fonts, with their notices in `docs/fonts/`. GitHub Pages publishes the docs directory from main. Repository visibility remains unchanged.
 
 [Desktop preview](docs/previews/desktop.jpg) · [Mobile preview](docs/previews/mobile.jpg) · [Validation scope](docs/VALIDATION.md)

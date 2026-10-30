@@ -11,3 +11,7 @@ Static HTML and CSS, native links and disclosure controls; no analytics, externa
 ## Preview
 
 Serve this directory locally; index.html and style.css are the canonical page sources. README artwork is readme-banner.svg. Font licenses and copyright notices are retained in fonts/. A local preview is not a public deployment or human usability validation.
+
+## October 30, 2026 — Editorial Landing Page
+
+Warm paper and teal ink connect Spiral to the Dazzler and Longshot field-guide pages. Existing Inter and League Gothic remain local. A fictional handoff note exposes the missing information in its third step. Installation and evaluation evidence give readers concrete next actions. No animation, analytics or external fonts. GitHub Pages serves main/docs.

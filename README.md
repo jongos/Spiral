@@ -60,7 +60,7 @@ Include a late approval and a failed notification.
 
 ## Further Reading
 
-[Detailed project reference](REFERENCE.md) · [Landing page](docs/index.html) · [Page preview notes](REFERENCE.md#landing-page-source)
+[Detailed project reference](REFERENCE.md) · [Landing page](https://jongos.github.io/Spiral/) · [Page preview notes](REFERENCE.md#landing-page-source)
 
 ## License
 
